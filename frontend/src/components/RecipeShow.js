@@ -41,7 +41,7 @@ function RecipeShow() {
           placeholder="Enter ingredients"
           value={formData.ingredients}
         ></textarea>
-        <button type="submit">Add</button>
+        <button type="submit">Add to a recipe</button>
       </form>
     </div>
   );
