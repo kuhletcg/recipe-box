@@ -22,8 +22,6 @@ function EditModal({ ingredients, id }) {
         <ModalBody>
           <form onSubmit={handleSubmit}>
             <textarea
-              cols="44"
-              rows="4"
               onChange={(e) => setNewIngredients(e.target.value)}
               value={newIngredients}
             ></textarea>
@@ -33,7 +31,7 @@ function EditModal({ ingredients, id }) {
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>
-            Cancel
+            Delete{" "}
           </Button>
         </ModalFooter>
       </Modal>
