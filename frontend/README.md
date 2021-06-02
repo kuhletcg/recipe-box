@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+When I started learning React, I found it difficult to keep up sometimes. I found that some of the tutorials were a bit too fast-paced for my liking.
+
+Thus, I’ve decided to write my own step-by-step tutorial on how to create a recipe book using React.
+This will include the basics of using create-react-app and won’t use many fancy packages.
+
+I don’t claim to be a React expert (I’m still learning myself), so if you find a mistake, feel free to leave a comment!
+
 ## Available Scripts
 
 In the project directory, you can run:
