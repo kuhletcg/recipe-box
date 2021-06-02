@@ -22,6 +22,8 @@ function EditModal({ ingredients, id }) {
         <ModalBody>
           <form onSubmit={handleSubmit}>
             <textarea
+              cols="44"
+              rows="4"
               onChange={(e) => setNewIngredients(e.target.value)}
               value={newIngredients}
             ></textarea>
