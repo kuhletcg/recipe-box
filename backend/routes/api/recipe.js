@@ -6,7 +6,7 @@ const recipeRoutes = (app) => {
       const results = await Recipe.find();
       response.status(200).send(results);
     } catch (error) {
-      res.status(404).send(error);
+      response.status(404).send(error);
     }
   });
   app.post("/api/recipe", async (request, response) => {
