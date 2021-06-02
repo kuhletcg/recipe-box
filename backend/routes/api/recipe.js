@@ -1,44 +1,44 @@
 const Recipe = require("../../model/recipe");
 
 const recipeRoutes = (app) => {
-  app.get("/api/recipe", async (req, res) => {
+  app.get("/api/recipe", async (request, response) => {
     try {
       const results = await Recipe.find();
-      res.status(200).send(results);
+      response.status(200).send(results);
     } catch (error) {
       res.status(404).send(error);
     }
   });
-  app.post("/api/recipe", async (req, res) => {
-    const { recipe, ingredients } = req.body;
+  app.post("/api/recipe", async (request, response) => {
+    const { recipe, ingredients } = request.body;
     try {
       const newRecipe = await Recipe({
         recipe,
         ingredients,
       }).save();
-      res.status(201).send(newRecipe);
+      response.status(201).send(newRecipe);
     } catch (error) {
-      res.status(400).send(error);
+      response.status(400).send(error);
     }
   });
-  app.delete("/api/recipe/:id", async (req, res) => {
+  app.delete("/api/recipe/:id", async (request, response) => {
     try {
-      const recipe = await Recipe.findById({ _id: req.params.id });
+      const recipe = await Recipe.findById({ _id: request.params.id });
       const deletedRecipe = await recipe.deleteOne();
-      res.status(200).send(deletedRecipe);
+      response.status(200).send(deletedRecipe);
     } catch (error) {
       res.status(400).send(error);
     }
   });
-  app.put("/api/recipe/:id", async (req, res) => {
+  app.put("/api/recipe/:id", async (request, response) => {
     try {
       const updatedRecipe = await Recipe.updateOne(
-        { _id: req.params.id },
+        { _id: request.params.id },
         {
-          ingredients: req.body.newIngredients,
+          ingredients: request.body.newIngredients,
         }
       );
-      res.status(201).send(updatedRecipe);
+      response.status(201).send(updatedRecipe);
     } catch (error) {
       res.status(400).send(error);
     }
