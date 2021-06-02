@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getRecipe } from "../redux/actions/recipe";
+import { Container } from "reactstrap";
 
 import Recipe from "./Recipe";
 
@@ -11,11 +12,11 @@ function RecipeList() {
     dispatch(getRecipe());
   }, [dispatch]);
   return (
-    <div>
+    <Container>
       {recipeList.map((recipe) => {
         return <Recipe key={recipe._id} {...recipe} />;
       })}
-    </div>
+    </Container>
   );
 }
 
