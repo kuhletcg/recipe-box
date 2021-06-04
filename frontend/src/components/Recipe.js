@@ -21,7 +21,13 @@ function Recipe({ recipe, _id, ingredients }) {
       <ListGroup>
         <ListGroupItem>
           <span onClick={toggle}>{recipe}</span>
-          <Button onClick={() => dispatch(deleteRecipe(_id))}>Delete</Button>
+          <Button
+            outline
+            color="danger"
+            onClick={() => dispatch(deleteRecipe(_id))}
+          >
+            Delete
+          </Button>
         </ListGroupItem>
         <Collapse isOpen={isOpen}>
           <Card>
