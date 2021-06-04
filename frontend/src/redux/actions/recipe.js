@@ -8,20 +8,20 @@ import {
 
 export const getRecipe = () => {
   return (dispatch) => {
-    axios.get("http://localhost:4500/api/recipe").then((res) =>
+    axios.get("http://localhost:4500/api/recipe").then((response) =>
       dispatch({
         type: GET_RECIPES,
-        payload: res.data,
+        payload: response.data,
       })
     );
   };
 };
 export const addRecipe = (recipe) => {
   return (dispatch) => {
-    axios.post("http://localhost:4000/api/recipe", recipe).then((res) =>
+    axios.post("http://localhost:4000/api/recipe", recipe).then((response) =>
       dispatch({
         type: ADD_RECIPE,
-        payload: res.data,
+        payload: response.data,
       })
     );
   };
@@ -29,7 +29,7 @@ export const addRecipe = (recipe) => {
 
 export const deleteRecipe = (id) => {
   return (dispatch) => {
-    axios.delete(`http://localhost:4500/api/recipe/${id}`).then((res) => {
+    axios.delete(`http://localhost:4500/api/recipe/${id}`).then((response) => {
       dispatch({
         type: DELETE_RECIPE,
         payload: id,
@@ -42,7 +42,7 @@ export const editRecipe = (obj) => {
   return (dispatch) => {
     axios
       .put(`http://localhost:4500/api/recipe/${id}`, { newIngredients })
-      .then((res) => {
+      .then((response) => {
         dispatch({
           type: EDIT_RECIPE,
           payload: obj,
