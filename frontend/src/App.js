@@ -1,11 +1,11 @@
 import "./App.css";
-import RecipeShow from "./components/RecipeShow";
+import RecipeForm from "./components/RecipeForm";
 import RecipesList from "./components/RecipeList";
 
 function App() {
   return (
     <div className="App">
-      <RecipeShow />
+      <RecipeForm />
       <RecipesList />
     </div>
   );
