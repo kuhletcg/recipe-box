@@ -18,7 +18,7 @@ export const getRecipe = () => {
 };
 export const addRecipe = (recipe) => {
   return (dispatch) => {
-    axios.post("http://localhost:4000/api/recipe", recipe).then((response) =>
+    axios.post("http://localhost:4500/api/recipe", recipe).then((response) =>
       dispatch({
         type: ADD_RECIPE,
         payload: response.data,

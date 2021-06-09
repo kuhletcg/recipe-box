@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-image: url("https://media.istockphoto.com/photos/cooking-at-home-picture-id1225681834?k=6&m=1225681834&s=612x612&w=0&h=ALNsltp9Oz5PrW0hCIQOSCs0p0ocK03VR2h2wCHHYnA=");
+
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .App-logo {
@@ -35,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+label {
+  color: white;
+  font-size: 30px;
 }
