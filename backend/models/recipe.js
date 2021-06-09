@@ -14,29 +14,3 @@ const RecipeSchema = new Schema({
 const Recipe = model("Recipe", RecipeSchema);
 
 module.exports = Recipe;
-
-// const mongoose = require("mongoose");
-
-// const productSchema = new mpngoose.Schema({
-//   name: {
-//     type: String,
-//     required: true,
-//   },
-//   description: {
-//     type: String,
-//     required: true,
-//   },
-//   price: {
-//     type: Number,
-//     required: true,
-//   },
-
-//   imageUrl: {
-//     type: String,
-//     required: true,
-//   },
-// });
-
-// const Product = mongoose.model("product", productSchema);
-
-// module.exports = Product;
