@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-// import { Container, FormGroup } from "reactstrap";
 import { addRecipe } from "../redux/actions/recipe";
 import { Button, Form, FormGroup, Label, Input, Container } from "reactstrap";
 import { useHistory } from "react-router-dom";
@@ -43,7 +42,7 @@ function RecipeForm() {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="imgredients">Ingredients</Label>
+          <Label for="ingredients">Ingredients</Label>
           <Input
             type="textarea"
             name="ingredients"
