@@ -1,4 +1,4 @@
-const Recipe = require("../../model/recipe");
+const Recipe = require("../../models/recipe");
 
 const recipeRoutes = (app) => {
   app.get("/api/recipe", async (request, response) => {
