@@ -1,11 +1,20 @@
 .App {
   text-align: center;
-  background-image: url("https://media.istockphoto.com/photos/cooking-at-home-picture-id1225681834?k=6&m=1225681834&s=612x612&w=0&h=ALNsltp9Oz5PrW0hCIQOSCs0p0ocK03VR2h2wCHHYnA=");
 
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
   background-position: center;
+}
+body {
+  background-image: url("https://image.shutterstock.com/image-photo/set-cakes-white-box-blue-260nw-1777298651.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Lato", sans-serif;
+}
+App {
+  font-size: 24px;
 }
 
 .App-logo {
@@ -45,4 +54,9 @@
 label {
   color: white;
   font-size: 30px;
+}
+
+h1 {
+  color: violet;
+  font-family: "Sofia", sans-serif;
 }
