@@ -21,7 +21,7 @@ function EditModal({ ingredients, id }) {
         <h3>Edit</h3>
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader>Modal title</ModalHeader>
+        <ModalHeader>Edit recipe</ModalHeader>
         <ModalBody>
           <form onSubmit={handleSubmit}>
             <textarea
