@@ -58,5 +58,26 @@ label {
 
 h1 {
   color: violet;
-  font-family: "Sofia", sans-serif;
+  font-size: 25px;
+}
+
+button {
+  color: black;
+  font-size: 30px;
+  border-radius: 0.5px;
+  border: 1rem #404040 solid;
+  background-color: white;
+  width: 15px 13px 15px 13px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 0.1px 1px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+div {
+  color: white;
+  font-size: 30px;
 }
