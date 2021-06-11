@@ -57,15 +57,15 @@ label {
 }
 
 h1 {
-  color: violet;
-  font-size: 25px;
+  color: rgb(30, 54, 160);
+  font-size: 30px;
 }
 
 button {
   color: black;
   font-size: 30px;
-  border-radius: 0.5px;
-  border: 1rem #404040 solid;
+  border-radius: 15px;
+  /* border: 1rem #404040 solid; */
   background-color: white;
   width: 15px 13px 15px 13px;
   cursor: pointer;
