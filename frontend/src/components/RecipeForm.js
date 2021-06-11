@@ -31,6 +31,9 @@ function RecipeForm() {
     <Container>
       <Form onSubmit={handleSubmit} className="recipe-form">
         <FormGroup>
+          {/* <h1>RECIPE BOX</h1> */}
+          <h1 class="font-effect-fire">RECIPE BOX</h1>
+
           <Label for="recipe">Recipe</Label>
           <Input
             type="text"
