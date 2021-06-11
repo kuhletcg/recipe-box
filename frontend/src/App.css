@@ -57,7 +57,7 @@ label {
 }
 
 h1 {
-  color: rgb(30, 54, 160);
+  color: rgb(160, 49, 41);
   font-size: 30px;
 }
 
@@ -65,7 +65,6 @@ button {
   color: black;
   font-size: 30px;
   border-radius: 15px;
-  /* border: 1rem #404040 solid; */
   background-color: white;
   width: 15px 13px 15px 13px;
   cursor: pointer;
